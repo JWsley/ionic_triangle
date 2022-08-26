@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <strong>BASE X ALTURA</strong>
+    <ion-item class="angulo">
+      <ion-label   position="floating">Base:</ion-label>
+      <ion-input [(ngModel)]="base"> </ion-input>
+    </ion-item>
+
+    <ion-item class="angulo">
+      <ion-label   position="floating">Altura:</ion-label>
+      <ion-input [(ngModel)]="altura"> </ion-input>
+    </ion-item>
+
+      <ion-button (click)="calc()" class="btn">Calculo</ion-button>
+
+      <p>{{resu}}</p>
+
+  </div>
+
+</ion-content>

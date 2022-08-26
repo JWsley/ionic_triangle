@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <ion-title>
+      <strong align="cemter">Area</strong>
+    </ion-title>
+  <ion-item class= "angulo" >
+        <ion-label position="floating"> L.1</ion-label>
+        <ion-input [(ngModel)]="a" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item class= "angulo" >
+    <ion-label position="floating"> L.2</ion-label>
+    <ion-input [(ngModel)]="b" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item class="angulo" >
+    <ion-label position="floating"> L.3</ion-label>
+    <ion-input  [(ngModel)]="c" type="number"></ion-input>
+  </ion-item>
+
+
+  <ion-button (click)="verify()" class="btn">Verify</ion-button>
+
+
+
+  </div>
+
+</ion-content>

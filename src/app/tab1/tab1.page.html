@@ -1,0 +1,40 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+
+<div id="container">
+
+      <ion-title>
+        <strong align="cemter">V.Triangulo</strong>
+      </ion-title>
+    <ion-item class= "angulo" >
+          <ion-label position="floating"> Ang.1</ion-label>
+          <ion-input [(ngModel)]="a" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item class= "angulo" >
+      <ion-label position="floating"> Ang.2</ion-label>
+      <ion-input [(ngModel)]="b" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item class="angulo" >
+      <ion-label position="floating"> Ang.3</ion-label>
+      <ion-input  [(ngModel)]="c" type="number"></ion-input>
+    </ion-item>
+
+
+    <ion-button (click)="verify()" class="btn">Verify</ion-button>
+    <P>{{resu}}</P>
+    <ion-img  class ='imgn' src='{{image}}'  class=""></ion-img>
+
+</div>
+
+
+
+
+</ion-content>
+
+
+
